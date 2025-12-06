@@ -17,7 +17,7 @@ async function generateCaption(base64ImageFile){
     model: "gemini-2.5-flash",
     contents: contents,
   });
-  console.log(response.text);
+  return (response.text);
 }
 
 module.exports = {
